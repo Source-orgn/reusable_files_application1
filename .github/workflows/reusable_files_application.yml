@@ -2,9 +2,7 @@ name: rani-ukamble-group/reusable_files_application
 on:
   push:
   workflow_dispatch:
-concurrency:
-  group: "${{ github.ref }}"
-  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
